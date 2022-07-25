@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #12475F;
+    /* text-align: center; */
+    color: white;
+}
+.list{
+    padding: 2rem;
+    text-align: center;
+    width: 50%;
+    margin: 2rem auto;
+    box-shadow: 0 0 5px #000;
+    position: relative;
+}
+.list .input{
+    padding: 6px 8px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    color: white;
+    max-width: 300px;
+    min-width: 300px;
+}
+.list input[type="date"]{
+    background-color: transparent;
+    border: 1px solid #eee;
+    outline: none;
+    color: white;
+    margin:0 1rem;
+}
+.list button{
+    padding: 0 8px;
+    font-weight: 900;
+}
+.list input::placeholder{
+    color: white;
+}
+.list i{
+    background-color: white;
+    color: black;
+    vertical-align: middle;
+    font-size: 24px;
+    margin-left: 1rem;
+}
+.event-list{
+    /* border: 1px solid; */
+    width: 50%;
+    word-wrap: break-word;
+    margin: 1rem auto;
+    text-align: start;
+    padding:8px;
+}
+.event-list h3{
+    text-align: center;
+    text-decoration: underline;
+}
+.to-dos{
+    border-bottom: 1px solid #eee;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.quote{
+    position: absolute;
+    bottom: 4px;
+    left: 30%;
+}
+
+/* game */
+
+.plays .play-game{
+    position: absolute;
+    right: 2rem;
+    background-color: green;
+    outline: none;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.plays .hide-game{
+    position: absolute;
+    left: 1rem;
+    bottom: 0.5rem;
+    background-color: red;
+    padding: 4px 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    display: none;
+}
+.game{
+    display: none;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 0.5rem 0;
+    text-align: center;
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.game .open{
+    margin-bottom: 0.5rem;
+}
+.game .human{
+    background-color: transparent;
+    border: 1px solid #eee;
+    outline: none;
+    padding: 4px 8px;
+    max-width: 100px;
+    border-radius: 5px;
+    color: white;
+}
+.value .play{
+    margin-top: 0.5rem;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+.results{
+    border: 1px solid;
+    display: grid;
+    width: 50%;
+    margin: auto;
+    grid-template-columns: 50% 50%;
+}
+.results p{
+    border: 1px solid;
+    padding: 1rem;
+}
+.result{
+    width: 50%;
+    margin: auto;
+    /* padding: 1rem 0; */
+    border: 1px solid;
+    font-size: 30px;
+}
+.rule{
+    color: red;
+    margin: 0.5rem 0 0.5rem 0;
+    display: none;
+}
+
+.hide{
+    display: none;
+    max-width: 20%;
+    margin: 0 auto 1rem;
+    cursor: pointer;
+}
+.show{
+    max-width: 15%;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+.picks{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 50%;
+    margin: 1rem auto 0;
+    border: 1px solid;
+}
+.picks .pick{
+    border: 1px solid;
+    padding: 1rem;
+}

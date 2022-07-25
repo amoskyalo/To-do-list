@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--event listening test start-->
+    <div class="list">
+        <label for="input"></label>
+        <input type="text" id="input" class="input" placeholder="Enter activity">
+        <i class="ri-add-fill add"></i>
+        <i class="ri-subtract-line sub"></i>
+        <input type="date" class="mydates">
+        <button class="add-date">add date</button>
+
+       
+        <div class="event-list">
+            <h3>Date: <span class="date-text"></span></h3>
+        </div>
+        <div class="plays">
+            <button class="play-game">play some game?</button>
+            <button class="hide-game">hide-game</button>
+        </div>
+
+        <!--My game-->
+        <div class="game">
+            <p class="open">Games help you refresh your mind from day work</p>
+            <p class="rules">
+                The following are rules for playing the game;
+            </p>
+            <ul class="rule">
+                <li>The input accepts numbers only</li>
+                <li>You should input numbers between 1 to 10</li>
+            </ul>
+            <button class="show btns">Show rules</button>
+            <button class="hide btns">Hide rules</button>
+            <div class="value">
+                <input type="text" placeholder="Enter number" class="human"><br>
+                <button class="play">Enter number(1-10) and click toplay</button>
+                <!-- <input type="text" placeholder="" class="computer" style="display: none;"> -->
+            </div>
+            <div class="picks">
+                <p class="pick">Your pick: <br><span class="yours">0</span></p>
+                <p class="pick">Computer pick: <br><span class="comps">0</span></p>
+            </div>
+            <div class="results">
+                <p class="human-value">Your Score: <br><span class="human-score">0</span></p>
+                <p class="computer-value">Computer Score: <br><span class="computer-score">0</span></p>
+            </div>
+            <div class="result"></div>
+        </div>
+    </div>
+    <!--event listening test end-->
+    <script src="script.js"></script>
+</body>
+</html>
